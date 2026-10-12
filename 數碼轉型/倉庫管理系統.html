@@ -46,7 +46,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
   <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>莫氏倉庫管理系統</title>
+  <title>MOKAGI倉庫管理系統</title>
 
   <style id="ChangCss">
 
@@ -156,13 +156,13 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 <body>
 
   <header>
-    <h1 id="本公司名稱">莫氏倉庫管理系統</h1>
+    <h1 id="本公司名稱">MOKAGI倉庫管理系統</h1>
   </header>
 
   <nav>
     <a href="javascript:void(0);" id="庫存btn" onclick="_導航換頁('庫存')" class="page用btn" >庫存</a>
     <div class="dropdown">
-      <a href="javascript:void(0);" onclick="Vip登入莫氏系統2025('莫氏倉庫管理系統');" >免費使用</a>
+      <a href="javascript:void(0);" onclick="Vip登入MOKAGI系統2025('MOKAGI倉庫管理系統');" >免費使用</a>
     </div>
   </nav>
 
@@ -239,7 +239,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
     
     <div id="nav" style="text-align: center;">
-      <a class="btn" href="javascript:void(0);" onclick="Vip登入莫氏系統2025('莫氏倉庫管理系統');" >💎 免費使用莫氏倉庫管理系統</a>
+      <a class="btn" href="javascript:void(0);" onclick="Vip登入MOKAGI系統2025('MOKAGI倉庫管理系統');" >💎 免費使用MOKAGI倉庫管理系統</a>
     </div>
 
     <p class="mokJsApi_copyright">版權</p>
@@ -358,12 +358,12 @@ if(已登入帳號) {
   }
 
 // VIP的user登入
-vip登入鍵 = `<a href="javascript:void(0);" onclick="Vip登入莫氏系統2025('${本公司名稱}','新')" >成員登入</a>`;
+vip登入鍵 = `<a href="javascript:void(0);" onclick="Vip登入MOKAGI系統2025('${本公司名稱}','新')" >成員登入</a>`;
 if(!已登入帳號) $('.dropdown').html(vip登入鍵);
 
 
 // 新增成員
-if(localStorage.getItem('VipAdmin標記')) $('.dropdown-content').prepend(`<a href="javascript:void(0);" onclick="Vip登入莫氏系統2025('${本公司名稱}','新')" >新增成員</a>`)
+if(localStorage.getItem('VipAdmin標記')) $('.dropdown-content').prepend(`<a href="javascript:void(0);" onclick="Vip登入MOKAGI系統2025('${本公司名稱}','新')" >新增成員</a>`)
 
 _生成QRCode('VipPegaIDInput','您的網址qrcode')
 
@@ -383,11 +383,11 @@ _生成QRCode('VipPegaIDInput','您的網址qrcode')
 
   let 已登入帳號 
     , 帳號數據庫
-    , 本頁數據庫編號 = '莫氏倉庫管理系統產品料'
+    , 本頁數據庫編號 = 'MOKAGI倉庫管理系統產品料'
     , cut文件前綴 = '.io/d0/'
     , 廣告功能 = false 
     , 產品料 = null
-    , 本公司名稱 = 版模 = '莫氏倉庫管理系統';
+    , 本公司名稱 = 版模 = 'MOKAGI倉庫管理系統';
 
 
 
@@ -566,7 +566,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script>
 
-公司資料 = [{ '公司名': '莫氏倉庫管理系統', '廣告功能': 'false'}];
+公司資料 = [{ '公司名': 'MOKAGI倉庫管理系統', '廣告功能': 'false'}];
 
   // 取帳戶 數據 (庫存)
   let inventoryData = 產品料 
@@ -916,7 +916,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
       $('.dropdown').html(`
         <p id="dropdownToggle">${已登入帳號}</p>
         <div class="dropdown-content">
-          <a id="登入Btn" href="javascript:void(0);" onclick="Vip登入莫氏系統2025('莫氏倉庫管理系統','出')">登出</a>
+          <a id="登入Btn" href="javascript:void(0);" onclick="Vip登入MOKAGI系統2025('MOKAGI倉庫管理系統','出')">登出</a>
         </div>
       `);
     }

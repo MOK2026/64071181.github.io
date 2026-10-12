@@ -34,7 +34,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>身份認證系統|莫氏金流商匯</title>
+<title>身份認證系統|MOKAGI金流商匯</title>
 
 <style>
   :root {--neon-blue: #00f3ff;--neon-purple: #9d00ff;--dark-bg: #0a0a20;}
@@ -194,14 +194,14 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
   由不同網站到此login
   如上次記錄的網和這次來的網不同，則先刪除分流記錄
   */
-  const 由網  = localStorage.getItem('莫氏VIP分流')
+  const 由網  = localStorage.getItem('MOKAGIVIP分流')
   上次網  = localStorage.getItem('上次網')
   console.log(`上次網: ${上次網}  這次網: ${由網} `);
   localStorage.setItem('上次網', 由網);
 
   // 各網login
   let 只有vipUser才會帶數據庫登入 //由vip的網站到此login
-  // 用於對比入網和數據中模版是否一致 // Vip登入莫氏系統2025@mokJsApi.js
+  // 用於對比入網和數據中模版是否一致 // Vip登入MOKAGI系統2025@mokJsApi.js
     , 註冊時的網模版 = localStorage.getItem('VIP註冊時的網模版')
 
   function Start(){

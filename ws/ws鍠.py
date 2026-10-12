@@ -937,7 +937,7 @@ def _執行Ws自動客服():
         time.sleep(1)  # 避免过高频率检查
 
     # 写入内容覆盖剪贴板
-    #pyperclip.copy('莫氏金流商匯 ws鍠')
+    #pyperclip.copy('MOKAGI金流商匯 ws鍠')
 
     獲取用戶輸入(current_clipboard)
 
